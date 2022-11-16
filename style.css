@@ -1,0 +1,402 @@
+:root {
+    --ba-color: rgb(48, 49, 50);
+    --ba-color2: rgb(164, 152, 152);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Blaka Ink', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Island Moments', cursive;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #111;
+}
+.header,.header__right,
+.icon_profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.account {
+    display: flex;
+    transition: .3s linear;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+.account:hover {
+    background-color: rgb(39, 39, 39);
+}
+.header {
+    padding: 5px 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    border-bottom: 1px solid;
+    box-shadow: 0px 1px 10px var(--ba-color);
+    background-color: rgb(24, 23, 23);
+}
+.icon {
+    margin: 0 14px;
+    font-size: 23px;
+    position: relative;
+    cursor: pointer;
+}
+.modal_box {
+    position: absolute;
+    display: none;
+    width: 380px;
+    height: 530px;
+    background-color: var(--ba-color);
+    border-radius: 10px;
+    top: 40px;
+    right: -30px;
+}
+.show_box {
+    display: block;
+}
+.title_box {
+    padding: 20px 13px;
+}
+.activites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activites p {
+    font-size: .8rem;
+}
+.fa-envelope {
+    margin-top: 50px;
+    font-size: 8rem;
+    color: #ccc;
+}
+.notifictation span {
+    font-size: .8rem;
+    padding: 4px 10px;
+    margin: 0px 7px;
+    font-weight: 700;
+    border-radius: 15px;
+    background-color: #222;
+}
+.title_icon {
+    position: absolute;
+    font-size: 1rem;
+    display: none;
+    bottom: -40px;
+    left: -100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(40, 41, 42);
+    transition: all 2s linear;
+}
+.fa-solid:hover~.title_icon {
+    display: block;
+}
+.upload {
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 6px 13px;
+    background-color: var(--ba-color);
+}
+.upload:hover {
+    background-color: rgb(32, 32, 33);}
+.upload>span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.search {
+    position: relative;
+    overflow: hidden;
+}
+.search input {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 9px 13px;
+    width: 300px;
+    background-color: var(--ba-color);
+}
+.input_search {
+    position: absolute;
+    border-left: 1px solid;
+    padding: 4px 0px 4px 13px ;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50% );
+}
+.icon_profile {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(24, 130, 59);
+    border-radius: 50%;
+    position: relative;
+}
+.icon_profile::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    background-color: transparent;
+}
+.tiktok {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: #333;
+    top: 50px;
+    border-radius: 5px;
+}
+.icon_profile:hover>.tiktok {
+    display: block;
+}
+.tiktok_ele {
+    width: 200px;
+    font-size: 1rem;
+    float: left;
+}
+.tiktok_ele>i {
+    padding: 15px 10px;
+
+}
+.tiktok_ele:hover {
+    background-color: rgb(56, 56, 56);
+    border-radius: 5px;
+}
+.body_content {
+    padding: 55px;
+    display: flex;
+}
+.body_content_L {
+    width: 24%;
+    margin-left: 90px;
+}
+.body_content_R {
+    width: 65%;
+    margin-top: 45px;
+    padding-left: 10%;
+}
+.body_L_main {
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(42, 42, 42);
+}
+.body_L_main li {
+    list-style: none;
+}
+.body_L_main li a {
+    text-decoration: none;
+    padding: 15px 0px;
+}
+.L_main {
+    display: flex;
+    transition: .3s linear;
+    border-radius: 3px;
+}
+.L_main:hover{
+    background-color: rgb(39, 39, 39);
+}
+.active  {
+    color: rgb(201, 59, 59);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.L_main>div {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+.out_standing {
+    padding: 20px 0px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.about {
+    display: flex;
+}
+.about li a{
+    font-size: 12px;
+    margin: 0px 3px 10px 3px;
+    color: #333;
+    transition: all .3s linear;
+}
+.showbar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about li a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+.account {
+    margin-bottom: 20px;
+}
+.more {
+    border-bottom: 1px solid rgb(42, 42, 42);
+    margin-bottom: 10px;
+}
+.avata_acount>img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+.realname {
+    color: aliceblue;
+    font-size: small;
+}
+.R_avata {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+.R_wrap_content_center {
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid rgb(42, 42, 42);
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.wraper {
+    display: flex;
+}
+
+.R_content {
+    margin: 0px 0px 13px 13px;
+}
+.R_main {
+    margin-bottom: 13px;
+}
+.fa-circle-check {
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin: 0px 3px;
+}
+.btn_follow {
+    padding: 6px 18px;
+    border-radius: 3px;
+    background-color: var(--ba-color);
+    border: 1px solid red;   
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_follow:hover {
+    background-color: #222;
+}
+.R_audio {
+    display: flex;
+    position: relative;
+    margin-right: -50px;
+    width: 100%;
+}
+.R_react {
+    margin-left: 15px;
+    transform: translateY(50%);
+}
+.R_react>li {
+    align-items: center;
+    justify-content: center;
+}
+video {
+    width: 344px;
+    height: 476px;
+    border-radius: 10px;
+}
+.icon_check {
+    align-items: center;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: var(--ba-color);
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.icon_check:hover {
+    background-color: #222;
+}
+.color_heart {
+    transition: .3s;
+    color: red;
+}
+.seemore_content {
+    display: none;
+}
+.seemore {
+    border-bottom: 1px solid rgb(42, 42, 42);
+    padding-bottom: 20px;
+}
+.seemore, .thugon {
+    cursor: pointer;
+}
+
+#mode {
+    position: relative;
+    padding: 6px 30px;
+    margin-left: 5px;
+    border-radius: 20px;
+    background-color: rgb(81, 84, 84);
+}
+#hi {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 1px solid;
+    height: 31px;
+    width: 31px;
+    background-color: rgb(232, 232, 232);
+    transition: all .5s linear;
+}
+.change {
+    transform: translateX(29px);
+    background-color: rgb(41, 39, 39) !important;
+}
+.bg_color {
+    background-color: var(--ba-color2) !important;
+}
+.baoerabg {
+    background-color: var(--ba-color2)!important;
+    border: 1px solid !important;
+}
+.folo {
+    background-color: white !important;
+}
+.cloudy {
+    background-color: rgb(232, 231, 229) !important;
+}
+.modal_box {
+    position: absolute;
+}
+.infor_content_desp {
+    margin-top: 5px;
+}
+.infor_content_desp,
+.hagtag {
+    font-size: .8rem;
+    font-weight: 600;
+}
+.cover {
+    background-color: var(--ba-color);
+    margin: 5px;
+    padding: 2px 10px 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.cover:hover {
+    background-color: #222;
+}
+.cover a {
+    font-size: 14px;
+    color: rgb(151, 149, 153);
+}
+.discover {
+    padding-bottom: 10px;
+}

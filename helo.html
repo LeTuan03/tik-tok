@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="forms" type="text" value="" onchange=Helo()>
+    <div class="contaner">
+        <li>Helo cac ban minh ten la Tuan i</li>
+        <li>Helo cac ban minh ten la Tuan i</li>
+        <li>Helo cac ban minh ten la Tuan i</li>
+        <li>Cac ban rat tuyet</li>
+        <li>Helo cac ban minh ten la Tuan i</li>
+    </div>
+</body>
+<script>
+
+    function Helo(){
+        var valueIn = document.getElementById('forms').value       
+        var liList = document.getElementsByTagName('li')
+        var len = liList.length
+        
+        for(let i=0;i<len;i++){
+            console.log(liList[i])
+            if(liList[i].innerText.includes(valueIn)){
+                liList[i].style.display='block';
+            }else{
+                liList[i].remove();
+            }
+       }
+    }
+</script>
+</html>
