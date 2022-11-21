@@ -1,7 +1,7 @@
 var fetchAPI = [
     {
         indext: 1,
-        srcImg: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/21be368c1f8b33d402e915281ab67875~c5_100x100.jpeg?x-expires=1668758400&x-signature=ohtsfeV0gO1tnuxpiQi5%2BLLpwKw%3D',
+        srcImg: './File/image/avata.jpeg',
         author_find: 'Tuanmc',
         more: 'tuan.me',
         inforContent:'Nghe loi may ban review',
@@ -13,19 +13,19 @@ var fetchAPI = [
     },
     {
         indext: 2,
-        srcImg: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/21be368c1f8b33d402e915281ab67875~c5_100x100.jpeg?x-expires=1668758400&x-signature=ohtsfeV0gO1tnuxpiQi5%2BLLpwKw%3D',
-        author_find: 'Tuanmc',
+        srcImg: './File/image/avata.jpeg',
+        author_find: 'Nhoc Toan',
         more: 'tuan.me',
         inforContent:'Nghe loi may ban review',
         hagTag:'#theanh28 #nncteam #reviewanngon',
-        srcVideo: 'https://v16-webapp.tiktok.com/ff0aae1788a025cfb1bd70492650a496/6374f5da/video/tos/useast2a/tos-useast2a-pve-0037c001-aiso/f13a111878ca412fa7723099eeeac5a4/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=1726&bt=863&cs=0&ds=3&ft=kLO5qy-gZmo0P_5CDBkVQ2RmsiHKJdmC0&mime_type=video_mp4&qs=0&rc=ODg4OGQ1Nzk8Ojk5PDs7Z0BpajVsOzM6ZmRsZzMzZjgzM0BgLTNgMjMvNS0xMGMvYy4xYSNfXzVucjRfZWlgLS1kL2Nzcw%3D%3D&l=202211160838010102451000840620CDCC&btag=80000',
+        srcVideo: 'https://v16-webapp.tiktok.com/1922d4a81814e535062058f3b1b34a6c/637a4ef6/video/tos/useast2a/tos-useast2a-pve-0037-aiso/0370f46a68b14670be1fbf299cd6bc64/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3232&bt=1616&cs=0&ds=3&ft=WgGbvNM6VQ9wUnBQL1W.CSpxatk3hdxwi5hyVrl8eC_O&mime_type=video_mp4&qs=0&rc=ZWdkZ2VmZmc0aTg7ODs5N0BpajU1NWU6ZmQ5ZzMzZjgzM0AwMDJhNWE2NV4xYDYyNTYxYSNoby5kcjRfL25gLS1kL2Nzcw%3D%3D&l=202211200957190102452421950F25C2D7&btag=80000',
         heartTime:200.3,
         comment:1000,
         share:1914,
     },
     {
         indext: 3,
-        srcImg: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/21be368c1f8b33d402e915281ab67875~c5_100x100.jpeg?x-expires=1668758400&x-signature=ohtsfeV0gO1tnuxpiQi5%2BLLpwKw%3D',
+        srcImg: './File/image/avata.jpeg',
         author_find: 'Tuanmc',
         more: 'tuan.me',
         inforContent:'Nghe loi may ban review',
@@ -37,7 +37,7 @@ var fetchAPI = [
     },
     {
         indext: 4,
-        srcImg: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/21be368c1f8b33d402e915281ab67875~c5_100x100.jpeg?x-expires=1668758400&x-signature=ohtsfeV0gO1tnuxpiQi5%2BLLpwKw%3D',
+        srcImg: './File/image/avata.jpeg',
         author_find: 'Tuanmc',
         more: 'tuan.me',
         inforContent:'Nghe loi may ban review',
@@ -49,7 +49,7 @@ var fetchAPI = [
     },
     {
         indext: 5,
-        srcImg: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/21be368c1f8b33d402e915281ab67875~c5_100x100.jpeg?x-expires=1668758400&x-signature=ohtsfeV0gO1tnuxpiQi5%2BLLpwKw%3D',
+        srcImg: './File/image/avata.jpeg',
         author_find: 'Tuanmc',
         more: 'tuan.me',
         inforContent:'Nghe loi may ban review',
@@ -61,7 +61,7 @@ var fetchAPI = [
     },
     {
         indext: 6,
-        srcImg: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/21be368c1f8b33d402e915281ab67875~c5_100x100.jpeg?x-expires=1668758400&x-signature=ohtsfeV0gO1tnuxpiQi5%2BLLpwKw%3D',
+        srcImg: './File/image/avata.jpeg',
         author_find: 'Tuanmc',
         more: 'tuan.me',
         inforContent:'Nghe loi may ban review',

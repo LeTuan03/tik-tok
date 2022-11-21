@@ -16,6 +16,7 @@
 }
 body {
     background-color: #111;
+    scroll-behavior: smooth;
 }
 .header,.header__right,
 .icon_profile {
@@ -37,8 +38,7 @@ body {
     width: 100%;
     position: fixed;
     z-index: 9;
-    border-bottom: 1px solid;
-    box-shadow: 0px 1px 10px var(--ba-color);
+    border-bottom: 1px solid rgb(42, 42, 42);
     background-color: rgb(24, 23, 23);
 }
 .icon {
@@ -171,15 +171,31 @@ body {
     border-radius: 5px;
 }
 .body_content {
+    width: 100%;
     padding: 55px;
-    display: flex;
+    position: relative;
+}
+.body_content_L{
+    overflow-y: hidden;
+}
+.body_content_L:hover {
+    overflow-y: scroll;
+}
+.body_content_L::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 10px;
 }
 .body_content_L {
     width: 24%;
+    height: 650px;
+    padding-bottom: 100px;
+    position: fixed;
     margin-left: 90px;
 }
 .body_content_R {
-    width: 65%;
+    position: absolute;
+    width: 55%;
+    right: 190px;
     margin-top: 45px;
     padding-left: 10%;
 }

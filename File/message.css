@@ -1,0 +1,221 @@
+.return {
+    position: absolute;
+    top: 85px;
+    left: 180px;
+    font-size: 2rem;
+    color: red;
+}
+.content_mess,.available_account,
+.Lcontent_body_h,.model_header {
+    display: flex;
+    align-items: center;
+}
+.content_mess {
+    justify-content: center;
+    padding-top: 80px;
+}
+.content_body {
+    display: flex;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70%;
+}
+.Lcontent_body {
+    flex: 1;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.Rcontent_body {
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+    flex: 2;
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+}
+.Lcontent_body_h,.model_header {
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.Lcontent_body_h {
+    border-bottom: 1px solid rgb(42, 42, 42);
+}
+.Lcontent_body_h h3, .Lcontent_body_h i{
+    color: #000;
+    font-size: 1.5rem;
+}
+.wraper_input{
+    font-size: 1.2rem;
+    position: relative;
+    padding: 6px 0px;
+    padding-left: 35px;
+}
+.after {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    top: 11px;
+    left: 0px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: transparent;
+}
+.after::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: transparent;
+}
+.model {
+    display: none;
+    width: 700px;
+    /* height: 369px; */
+    height: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.show {
+    display: block;
+    position: absolute;
+    transition: all 2s;
+    height: 369px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+}
+.model_header {
+    border-bottom: 1px solid rgb(42, 42, 42);
+}
+.model_header>div {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.model_body {
+    padding: 20px 30px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(42, 42, 42);
+}
+.text_setting{
+    color: rgb(69, 137, 137);
+    font-size: small;
+    margin: 7px 0px 20px 0px;
+}
+.model_footer {
+    display: flex;
+    float: right;
+    padding-right: 30px;
+}
+.model_footer button {
+    cursor: pointer;
+    padding: 10px 40px;
+    margin: 8px 10px;
+    color: #000;
+    font-weight: bold;
+}
+.model_footer button:hover {
+    opacity: .9;
+}
+.active_btn {
+    background-color: red;
+    color: rgb(248, 248, 248) !important;
+}
+.fa-gears, .times {
+    cursor: pointer;
+}
+.message_chat {
+    font-size: small;
+    padding: 30px 20px;
+    color: black;
+    background-color: aliceblue;
+}
+.available_account {
+    margin-bottom: 10px;
+    background-color: rgb(41, 97, 146);
+}
+.avata_acount {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 15px 20px;
+    border: 2px solid green;
+}
+.wraper_des {
+    padding-top: -5px;
+}
+.wraper_des>div {
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+.name {
+    font-weight: bold;
+}
+.main_message {
+    overflow: scroll;
+    height: 600px;
+    padding-bottom: 50px;
+}
+.main_message::-webkit-scrollbar,
+.room_chat::-webkit-scrollbar,
+.recheck::-webkit-scrollbar {
+    width: 10px;
+}
+.recheck {
+    height: 445px;
+    overflow-y: scroll;
+}
+.room_chat  {
+    overflow-y: scroll;
+    height: 445px;
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    width: 570px;
+}
+.chat_input_text {
+    position: absolute;
+    padding: 8px 20px;
+    color: #000;
+    bottom: 15px;
+    left: 60px;
+    font-weight: 700;
+    border-radius: 20px;
+    outline: rgb(41, 97, 146);
+    border: 1px solid rgb(41, 97, 146);
+    background-color: rgb(41, 97, 146);
+    color: white;
+}
+.input {
+    width: 560px;
+    padding-left: 90px;
+}
+.account__chatting {
+    z-index: 4;
+}
+.message {
+    display: inline-block;
+    flex-direction: row-reverse;
+    background-color: rgb(41, 97, 146);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+.list_chated {
+    padding-left: 30px;
+}
+.times {
+    font-size: small;
+    color: rgb(41, 97, 146);
+    margin-bottom: 10px;
+    padding-left: 30px;
+}

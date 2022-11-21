@@ -9,14 +9,23 @@
 <body>
     <input id="forms" type="text" value="" onchange=Helo()>
     <div class="contaner">
-        <li>Helo cac ban minh ten la Tuan i</li>
-        <li>Helo cac ban minh ten la Tuan i</li>
-        <li>Helo cac ban minh ten la Tuan i</li>
-        <li>Cac ban rat tuyet</li>
-        <li>Helo cac ban minh ten la Tuan i</li>
+        <li></li>
     </div>
 </body>
 <script>
+    var contaner = document.getElementsByClassName('contaner')[0]
+    var date = new Date()
+    var hour = date.getHours()
+    console.log(date)
+    if(hour<8){
+        contaner.innerHTML = "Goor morning"
+    }else if(hour<10){
+        contaner.innerHTML = "Goor afternoon"
+    }else if(hour<18){
+        contaner.innerHTML = "Goor evening"
+    }else{
+        contaner.innerHTML = "Goor night"
+    }
 
     function Helo(){
         var valueIn = document.getElementById('forms').value       
