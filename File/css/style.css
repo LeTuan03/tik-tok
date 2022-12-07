@@ -2,6 +2,7 @@
     --ba-color: rgb(48, 49, 50);
     --ba-color2: rgb(164, 152, 152);
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -13,26 +14,32 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     list-style: none;
-}
-body {
-    background-color: #111;
     scroll-behavior: smooth;
 }
-.header,.header__right,
+
+body {
+    background-color: #111;
+}
+
+.header,
+.header__right,
 .icon_profile {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .account {
     display: flex;
     transition: .3s linear;
     border-radius: 3px;
     padding: 3px 5px;
 }
+
 .account:hover {
     background-color: rgb(39, 39, 39);
 }
+
 .header {
     padding: 5px 0px;
     width: 100%;
@@ -41,12 +48,14 @@ body {
     border-bottom: 1px solid rgb(42, 42, 42);
     background-color: rgb(24, 23, 23);
 }
+
 .icon {
     margin: 0 14px;
     font-size: 23px;
     position: relative;
     cursor: pointer;
 }
+
 .modal_box {
     position: absolute;
     display: none;
@@ -57,25 +66,31 @@ body {
     top: 40px;
     right: -30px;
 }
+
 .show_box {
     display: block;
 }
+
 .title_box {
     padding: 20px 13px;
 }
+
 .activites {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .activites p {
     font-size: .8rem;
 }
+
 .fa-envelope {
     margin-top: 50px;
     font-size: 8rem;
     color: #ccc;
 }
+
 .notifictation span {
     font-size: .8rem;
     padding: 4px 10px;
@@ -84,6 +99,7 @@ body {
     border-radius: 15px;
     background-color: #222;
 }
+
 .title_icon {
     position: absolute;
     font-size: 1rem;
@@ -95,9 +111,11 @@ body {
     background-color: rgb(40, 41, 42);
     transition: all 2s linear;
 }
+
 .fa-solid:hover~.title_icon {
     display: block;
 }
+
 .upload {
     border-radius: 1px;
     cursor: pointer;
@@ -105,16 +123,21 @@ body {
     padding: 6px 13px;
     background-color: var(--ba-color);
 }
+
 .upload:hover {
-    background-color: rgb(32, 32, 33);}
+    background-color: rgb(32, 32, 33);
+}
+
 .upload>span {
     font-weight: bold;
     margin-right: 10px;
 }
+
 .search {
     position: relative;
     overflow: hidden;
 }
+
 .search input {
     outline: none;
     border: none;
@@ -124,14 +147,16 @@ body {
     width: 300px;
     background-color: var(--ba-color);
 }
+
 .input_search {
     position: absolute;
     border-left: 1px solid;
-    padding: 4px 0px 4px 13px ;
+    padding: 4px 0px 4px 13px;
     right: 13px;
     top: 50%;
-    transform: translateY(-50% );
+    transform: translateY(-50%);
 }
+
 .icon_profile {
     width: 30px;
     height: 30px;
@@ -139,6 +164,7 @@ body {
     border-radius: 50%;
     position: relative;
 }
+
 .icon_profile::after {
     content: '';
     position: absolute;
@@ -146,6 +172,7 @@ body {
     width: 50px;
     background-color: transparent;
 }
+
 .tiktok {
     position: absolute;
     display: none;
@@ -154,37 +181,49 @@ body {
     top: 50px;
     border-radius: 5px;
 }
+
+.text {
+    transform: translateY(3px);
+}
+
 .icon_profile:hover>.tiktok {
     display: block;
 }
+
 .tiktok_ele {
     width: 200px;
     font-size: 1rem;
     float: left;
 }
+
 .tiktok_ele>i {
     padding: 15px 10px;
-
 }
+
 .tiktok_ele:hover {
     background-color: rgb(56, 56, 56);
     border-radius: 5px;
 }
+
 .body_content {
     width: 100%;
     padding: 55px;
     position: relative;
 }
-.body_content_L{
+
+.body_content_L {
     overflow-y: hidden;
 }
+
 .body_content_L:hover {
     overflow-y: scroll;
 }
+
 .body_content_L::-webkit-scrollbar,
 body::-webkit-scrollbar {
     width: 10px;
 }
+
 .body_content_L {
     width: 24%;
     height: 650px;
@@ -192,6 +231,7 @@ body::-webkit-scrollbar {
     position: fixed;
     margin-left: 90px;
 }
+
 .body_content_R {
     position: absolute;
     width: 55%;
@@ -199,78 +239,96 @@ body::-webkit-scrollbar {
     margin-top: 45px;
     padding-left: 10%;
 }
+
 .body_L_main {
     padding-top: 20px;
     border-bottom: 1px solid rgb(42, 42, 42);
 }
+
 .body_L_main li {
     list-style: none;
 }
+
 .body_L_main li a {
     text-decoration: none;
-    padding: 15px 0px;
+    padding: 10px 0px;
 }
+
 .L_main {
     display: flex;
     transition: .3s linear;
     border-radius: 3px;
 }
-.L_main:hover{
+
+.L_main:hover {
     background-color: rgb(39, 39, 39);
 }
-.active  {
-    color: rgb(201, 59, 59);
+
+.active {
+    color: rgba(254, 44, 85, 1);
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 .L_main>div {
     margin-right: 10px;
     font-size: 1.3rem;
 }
+
 .out_standing {
     padding: 20px 0px;
     font-size: .8rem;
     font-weight: 700;
 }
+
 .about {
     display: flex;
 }
-.about li a{
+
+.about li a {
     font-size: 12px;
     margin: 0px 3px 10px 3px;
     color: #333;
     transition: all .3s linear;
 }
+
 .showbar {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .about li a:hover {
     color: #ccc;
     text-decoration: underline;
 }
+
 .account {
     margin-bottom: 20px;
 }
+
 .more {
     border-bottom: 1px solid rgb(42, 42, 42);
     margin-bottom: 10px;
 }
+
 .avata_acount>img {
     width: 33px;
     height: 33px;
     border-radius: 50%;
     margin-right: 13px;
 }
+
 .realname {
-    color: aliceblue;
-    font-size: small;
+    color: rgb(173, 174, 174);
+    font-size: 13px;
 }
+
 .R_avata {
     width: 56px;
     height: 56px;
     border-radius: 50%;
 }
+
 .R_wrap_content_center {
     position: relative;
     display: flex;
@@ -278,6 +336,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 .wraper {
     display: flex;
 }
@@ -285,45 +344,55 @@ body::-webkit-scrollbar {
 .R_content {
     margin: 0px 0px 13px 13px;
 }
+
 .R_main {
     margin-bottom: 13px;
 }
+
 .fa-circle-check {
     background-color: aquamarine;
     border-radius: 50%;
     margin: 0px 3px;
 }
+
 .btn_follow {
     padding: 6px 18px;
     border-radius: 3px;
     background-color: var(--ba-color);
-    border: 1px solid red;   
+    border: 1px solid red;
     color: red;
     font-weight: bold;
     cursor: pointer;
 }
+
 .btn_follow:hover {
     background-color: #222;
 }
+
 .R_audio {
     display: flex;
     position: relative;
     margin-right: -50px;
     width: 100%;
 }
+
 .R_react {
     margin-left: 15px;
     transform: translateY(50%);
 }
+
 .R_react>li {
     align-items: center;
     justify-content: center;
 }
+
 video {
     width: 344px;
-    height: 476px;
+    height: 566px;
     border-radius: 10px;
+    border-radius: 12px;
 }
+
 .icon_check {
     align-items: center;
     padding: 12px;
@@ -335,21 +404,27 @@ video {
     cursor: pointer;
     transition: .2s linear;
 }
+
 .icon_check:hover {
     background-color: #222;
 }
+
 .color_heart {
     transition: .3s;
     color: red;
 }
+
 .seemore_content {
     display: none;
 }
+
 .seemore {
     border-bottom: 1px solid rgb(42, 42, 42);
     padding-bottom: 20px;
 }
-.seemore, .thugon {
+
+.seemore,
+.thugon {
     cursor: pointer;
 }
 
@@ -360,6 +435,7 @@ video {
     border-radius: 20px;
     background-color: rgb(81, 84, 84);
 }
+
 #hi {
     position: absolute;
     left: 0;
@@ -371,34 +447,43 @@ video {
     background-color: rgb(232, 232, 232);
     transition: all .5s linear;
 }
+
 .change {
     transform: translateX(29px);
     background-color: rgb(41, 39, 39) !important;
 }
+
 .bg_color {
     background-color: var(--ba-color2) !important;
 }
+
 .baoerabg {
     background-color: var(--ba-color2)!important;
     border: 1px solid !important;
 }
+
 .folo {
     background-color: white !important;
 }
+
 .cloudy {
     background-color: rgb(232, 231, 229) !important;
 }
+
 .modal_box {
     position: absolute;
 }
+
 .infor_content_desp {
     margin-top: 5px;
 }
+
 .infor_content_desp,
 .hagtag {
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 600;
 }
+
 .cover {
     background-color: var(--ba-color);
     margin: 5px;
@@ -406,13 +491,77 @@ video {
     border-radius: 20px;
     display: inline-block;
 }
+
 .cover:hover {
     background-color: #222;
 }
+
 .cover a {
     font-size: 14px;
     color: rgb(151, 149, 153);
 }
+
 .discover {
     padding-bottom: 10px;
+}
+
+.wraper_1 {
+    position: relative;
+}
+
+.modal_account {
+    background-color: var(--ba-color);
+    display: none;
+    position: absolute;
+    top: 42px;
+    width: 80%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.header_modal {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 17px;
+    margin-bottom: 7px;
+}
+
+.blur {
+    font-size: small;
+}
+
+.header_modal a img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 80px;
+}
+
+.body_modal {
+    margin-left: 30px;
+}
+
+.box_fot {
+    margin: 7px 0px;
+    font-weight: 100;
+}
+
+.follower,
+.like {
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+.toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: red;
+    border-radius: 3px 3px 0px 0px;
+    padding: 5px 10px;
+}
+
+.toTop a {
+    color: white;
 }

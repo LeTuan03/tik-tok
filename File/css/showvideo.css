@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Ink&family=Dancing+Script:wght@400;700&family=Island+Moments&family=Montserrat:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+}
+
+.contaner,
+.header_modal,
+.modal_left,
+.footer__social,
+.social__licm,
+.social__link,
+.dialog_comment,
+.user_comment,
+.time {
+    display: flex;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.video,
+.user_title,
+.emoji,
+.show_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    left: 40px;
+}
+
+.video {
+    width: 64%;
+    background-color: rgb(12, 13, 13);
+}
+
+.detail {
+    width: 36%;
+    padding: 56px 32px 0px 32px;
+}
+
+.detail_content {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.detail_header,
+.detail__footer {
+    width: 100%;
+}
+
+.header_modal,
+.footer__social,
+.social__licm,
+.social__link {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog_comment,
+.show_more {
+    justify-content: space-between;
+}
+
+.user_name {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.btn_follow {
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn_follow:hover {
+    background-color: rgb(255, 0, 0, .1);
+}
+
+.hagtag {
+    font-weight: bold;
+}
+
+.footer_link {
+    position: relative;
+}
+
+.get_link {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: rgb(79, 81, 84);
+    background-color: rgb(244, 244, 244);
+    pointer-events: none;
+}
+
+.btn_copy {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;   
+    background-color: rgb(244, 244, 244);
+    cursor: pointer;
+}
+
+.btn_copy:hover {
+    color: rgb(71, 71, 70);
+}
+
+.footer__social {
+    margin: 10px 0px;
+}
+
+.icon_au {
+    background-color: rgb(183, 189, 195);
+}
+
+.icon_au {
+    margin-right: 8px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    padding-top: 7px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.styleicon {
+    background-color: var(--i);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    padding: 7px 0px 0px 7px;
+}
+
+.detail__dialog {
+    width: 100%;
+    height: 368px;
+    overflow-y: scroll;
+    background-color: rgb(236, 241, 241);
+}
+
+.detail__dialog::-webkit-scrollbar {
+    width: 0px;
+}
+
+.dialog_comment {
+    width: 100%;
+    margin: 4px 0px 35px 0px;
+}
+
+.time {
+    margin-top: 10px;
+}
+
+.up_time {
+    margin-right: 30px;
+}
+
+.dialog {
+    position: relative;
+    display: flex;
+    margin: 10px 0px;
+}
+
+.emoji {
+    position: absolute;
+    right: 16%;
+    top: 11px;
+}
+
+.commentting {
+    width: 90%;
+    padding: 10px 20% 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(244, 244, 244);
+}
+
+.push {
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    color: rgb(202, 200, 200);
+    cursor: pointer;
+    transition: .2s;
+    font-weight: bold;
+}
+
+.push:hover {
+    color: black;
+}
+
+.reply:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.up_time,
+.reply {
+    font-size: .9rem;
+    color: rgb(128, 134, 139);
+}
+
+.icon_check {
+    cursor: pointer;
+}
+
+.heart {
+    color: red;
+}
+
+.more_des {
+    color: rgb(128, 134, 139);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.more_des:hover {
+    text-decoration: underline;
+}
+
+.show_more {
+    margin: 20px 0px;
+    width: 140%;
+    margin-bottom: -40px;
+}
+
+.like3 {
+    float: right;
+}
+
+.start_show {
+    display: none;
+}
+
+.copied {
+    position: absolute;
+    display: none;
+    right: 19%;
+    top: 10px;
+}
+
+.song:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

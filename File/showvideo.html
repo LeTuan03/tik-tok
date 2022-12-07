@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/showvideo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contaner">
+        <a href="../indext.html">
+            <img id="logo" src="https://i.pinimg.com/originals/c7/bb/d9/c7bbd98bde837a9dc48159df283d2d79.png" alt="">
+        </a>
+        <div class="video">
+            <video controls loop autoplay src="./video/download.mp4"></video>
+        </div>
+        <div class="detail">
+            <div class="detail_content">
+                <div class="detail__header">
+                    <div class="header_modal">
+                        <div class="modal_left">
+                            <a href="">
+                                <img style="width: 48px; height: 48px; border-radius: 50%; margin-right: 15px;" src="./image/avata.jpeg" alt="" />
+                            </a>
+                            <div class="wraper_name">
+                                <div class="user_name">tuan.me</div>
+                                <div class="user_title">
+                                    <div style="margin-right: 3px;">Tuanms </div>
+                                    <small> . 22/05</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="R_folow">
+                            <button class="btn_follow" onclick=follow(this)>Follow</button>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <span class="despcription">Hom nay tuan mc be laptop </span><span class="hagtag"> #tuan#tuanchanle#intel#papiloinx360</span>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <span class="song"><i class="fa-solid fa-music"></i> nhạc nền - Đặng Nam Hải Triều</span>
+                    </div>
+                </div>
+                <div class="detail__footer">
+                    <div class="footer__social">
+                        <div class="social__licm">
+                            <i onclick=hearth(this) class=" fa-solid icon_check fa-heart icon_au"></i>
+
+                            <p style="margin-right: 20px;">1389</p>
+
+                            <i onclick=focu() class=" fa-solid icon_check fa-comment-dots icon_au"></i>
+
+                            <p>9999</p>
+                        </div>
+                        <div class="social__link">
+                            <a href="#"><i class="fa-solid  fa-code  styleicon" style=" --i:rgb(48, 46, 46);"></i></a>
+                            <a href="#"><i class="fa-solid  fa-paper-plane  styleicon" style=" --i:rgb(186, 32, 32); "></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook styleicon " style=" --i: rgb(83, 94, 213); "></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp styleicon " style=" --i: rgb(98, 204, 83); "></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter styleicon " style=" --i:rgb(58, 167, 200); "></i></a>
+                            <a href="#"><i class="fa-solid fa-share styleicon " style=" --i:transparent; "></i></a>
+                        </div>
+                    </div>
+                    <div class="footer_link ">
+                        <input type="text " class="get_link ">
+                        <button class="btn_copy" onclick=getLink()>Copy link</button>
+                        <p class="copied">copied</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="detail__dialog">
+                <div class="dialog_comment">
+                    <div class="user_comment" style="padding-left: 3px;">
+                        <div class="avata">
+                            <img style="width: 48px; height: 48px; border-radius: 50%; margin-right: 15px;" src="./image/avata.jpeg" alt="">
+                        </div>
+                        <div class="desp" style="margin-top: 7px;">
+                            <div class="user">Tuanmc</div>
+                            <div class="comment">trai tim anh cung biet dau</div>
+                            <div class="time">
+                                <div class="up_time">7-10</div>
+                                <div onclick=focu() class="reply">Reply</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="like" style="padding-right: 30px;"><i onclick=hearth(this) class=" fa-solid icon_check fa-heart"></i>
+                        <p class="heart_times">23</p>
+                    </div>
+                </div>
+                <div class="dialog_comment">
+                    <div class="user_comment" style="padding-left: 3px;">
+                        <div class="avata">
+                            <img style="width: 48px; height: 48px; border-radius: 50%; margin-right: 15px;" src="./image/avata.jpeg" alt="">
+                        </div>
+                        <div class="desp" style="margin-top: 7px;">
+                            <div class="user">Tuanmc</div>
+                            <div class="comment">trai tim anh cung biet dau</div>
+                            <div class="time">
+                                <div class="up_time">7-10</div>
+                                <div onclick=focu() class="reply">Reply</div>
+                            </div>
+                            <!-- show more comment  -->
+                            <div class="more_com">
+                                <div onclick=handleShow(this) class="more_des">
+                                    See more comments (<span class="countthis"></span>) v
+                                </div>
+                                <div class="start_show">
+                                    <div class="show_more">
+                                        <div class="dialog_comment">
+                                            <div class="user_comment" style="padding-left: 3px;">
+                                                <div class="avata">
+                                                    <img style="width: 48px; height: 48px; border-radius: 50%; margin-right: 15px;" src="./image/avata.jpeg" alt="">
+                                                </div>
+                                                <div class="desp" style="margin-top: 7px;">
+                                                    <div class="user">Tuanmc</div>
+                                                    <div class="comment">trai tim anh cung biet dau</div>
+                                                    <div class="time">
+                                                        <div class="up_time">7-10</div>
+                                                        <div onclick=focu() class="reply">Reply</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="like like3" style="padding-right: 30px;">
+                                            <i onclick=hearth(this) class=" fa-solid icon_check fa-heart"></i>
+                                            <p class="heart_times">23</p>
+                                        </div>
+                                    </div>
+                                    <div class="show_more">
+                                        <div class="dialog_comment">
+                                            <div class="user_comment" style="padding-left: 3px;">
+                                                <div class="avata">
+                                                    <img style="width: 48px; height: 48px; border-radius: 50%; margin-right: 15px;" src="./image/avata.jpeg" alt="">
+                                                </div>
+                                                <div class="desp" style="margin-top: 7px;">
+                                                    <div class="user">Tuanmc</div>
+                                                    <div class="comment">trai tim anh cung biet dau</div>
+                                                    <div class="time">
+                                                        <div class="up_time">7-10</div>
+                                                        <div onclick=focu() class="reply">Reply</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="like like3" style="padding-right: 30px;">
+                                            <i onclick=hearth(this) class=" fa-solid icon_check fa-heart"></i>
+                                            <p class="heart_times">23</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="like" style="padding-right: 30px;"><i onclick=hearth(this) class=" fa-solid icon_check fa-heart"></i>
+                        <p class="heart_times">23</p>
+                    </div>
+                </div>
+                <div class="dialog_comment">
+                    <div class="user_comment" style="padding-left: 3px;">
+                        <div class="avata">
+                            <img style="width: 48px; height: 48px; border-radius: 50%; margin-right: 15px;" src="./image/avata.jpeg" alt="">
+                        </div>
+                        <div class="desp" style="margin-top: 7px;">
+                            <div class="user">Tuanmc</div>
+                            <div class="comment">trai tim anh cung biet dau</div>
+                            <div class="time">
+                                <div class="up_time">7-10</div>
+                                <div onclick=focu() class="reply">Reply</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="like" style="padding-right: 30px;"><i onclick=hearth(this) class=" fa-solid icon_check fa-heart"></i>
+                        <p class="heart_times">23</p>
+                    </div>
+                </div>
+                <div class="dialog_comment">
+                    <div class="user_comment" style="padding-left: 3px;">
+                        <div class="avata">
+                            <img style="width: 48px; height: 48px; border-radius: 50%; margin-right: 15px;" src="./image/avata.jpeg" alt="">
+                        </div>
+                        <div class="desp" style="margin-top: 7px;">
+                            <div class="user">Tuanmc</div>
+                            <div class="comment">trai tim anh cung biet dau</div>
+                            <div class="time">
+                                <div class="up_time">7-10</div>
+                                <div onclick=focu() class="reply">Reply</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="like" style="padding-right: 30px;"><i onclick=hearth(this) class=" fa-solid icon_check fa-heart"></i>
+                        <p class="heart_times">23</p>
+                    </div>
+                </div>
+                <div class="dialog_comment">
+                    <div class="user_comment" style="padding-left: 3px;">
+                        <div class="avata">
+                            <img style="width: 48px; height: 48px; border-radius: 50%; margin-right: 15px;" src="./image/avata.jpeg" alt="">
+                        </div>
+                        <div class="desp" style="margin-top: 7px;">
+                            <div class="user">Tuanmc</div>
+                            <div class="comment">trai tim anh cung biet dau</div>
+                            <div class="time">
+                                <div class="up_time">7-10</div>
+                                <div onclick=focu() class="reply">Reply</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="like" style="padding-right: 30px;"><i onclick=hearth(this) class=" fa-solid icon_check fa-heart"></i>
+                        <p class="heart_times">23</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="dialog_addcom">
+                <div class="dialog">
+                    <input onchange=getVl() class="commentting" type="text" placeholder="Anncomment">
+                    <div class="emoji">
+                        <i style="margin-right: 10px;" class="fa-regular fa-face-smile"></i>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    <button onclick=getVl() class="push">Push</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/showvideo.js "></script>
+
+</html>
